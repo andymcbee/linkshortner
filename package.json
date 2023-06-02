@@ -1,0 +1,26 @@
+{
+  "name": "linkshortner",
+  "version": "1.0.0",
+  "description": "A simple app to create short redirect links.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andymcbee/linkshortner.git"
+  },
+  "author": "Andrew McBurney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andymcbee/linkshortner/issues"
+  },
+  "homepage": "https://github.com/andymcbee/linkshortner#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
