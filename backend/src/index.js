@@ -1,4 +1,9 @@
 import express from "express";
+import shortlinkRoutes from "./api/shortlink.js"
+
+//const api = require('./api');
+//const router = require('./router');
+
 
 const app = express()
 
@@ -11,11 +16,6 @@ app.use(express.urlencoded({ extended: true }));
 
 const port = process.env.PORT || 5001;
 
-
-app.get("/", async (req, res) => {
-    console.log(req.body);
-    console.log("TESDT API HIT...");
-    console.log(req.body.content[0]);
-  });
+app.use("/api/v1/shortlink", shortlinkRoutes);
   
   app.listen(port, () => console.log(`server running on port: ${port}`));
